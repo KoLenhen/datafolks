@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Datafolks Test Task</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+   </head>
+   <body>
+      <header class="header" id="header">
+         <div class="container">
+            <div class="row flex-column py-5">
+               <h1 class="header__title display-lg-3  display-sm-4 text-center py-4 mx-auto my-0 text-uppercase">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</h1>
+               <p class="header__text col-lg-12 text-center mx-auto py-4"> Коммуникационное агентство – часть многофункционального холдинга, объединяющего различные компании на территории России и ближнего зарубежья.</p>
+               <p class="header__text col-lg-12 text-center mx-auto"> 
+                  Наши подходы к организации бизнеса и имеющиеся ресурсы позволяют одинаково эффективно обеспечивать реализацию как крупномасштабных федеральных или международных проектов, так и решать небольшие локальные задачи. Мы находимся в постоянном развитии, расширяя и укрепляя имеющиеся бизнес-направления, а также формируя новые.
+               </p>
+            </div>
+         </div>
+      </header>
+      <section class="projects">
+         <div class="row no-gutters text-center py-5 mx-auto">
+            <ul class="projects__list w-100 justify-content-center list-group list-group-horizontal d-flex border-0 py-5  flex-wrap">
+            </ul>
+            <button type="button" class="btn projects__btn mx-auto mw-100 text-uppercase">Загрузить еще</button>
+         </div>
+      </section>
+      <section class="footer">
+         <div class="container">
+            <div class="row d-flex no-gutters py-4">
+               <div class="col-lg-7 py-5">
+                  <h3 class="footer__title text-uppercase">Контакты</h3>
+                  <p class="footer__text py-1">Коммуникационное агентство</p>
+                  <p class="footer__text" >344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12 </p>
+                  <p class="footer__text" >Бизнес–центр «Рост», оф. 104</p>
+                  <div class="footer__wrapper d-flex flex-wrap">
+                     <div class="contacts__phone pt-4 pr-4">
+                        <a href="tel:+78613001128" class="footer__text footer__phone d-block ">+7 (861) 300-11-28</a>
+                        <a href="tel:+78613001152" class="footer__text footer__phone d-block ">+7 (861) 300-11-52</a>
+                        <a href="tel:+78613001152" class="footer__text footer__phone d-block ">+7 (861) 300-11-52</a> 
+                     </div>
+                     <div class="footer__email pt-5 pl-5 position-relative">
+                        <p class="footer__text pl-4 footer__link" >Email:</p>
+                        <a class="footer__text pl-4 footer__link d-block" href="mailto:info@example.com"class="d-block ">info@example.com</a>
+                        <a class="footer__text pl-4 footer__link  d-block" href="https://www.facebook.com/" target='_blank' class="d-block ">Facebook.com/exampleagency</a> 
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5 p-0">
+                  <form class="footer__form p-4">
+                     <div class="form-group">s
+                        <input type="text" class="form-control footer__input p-4" required id="formName" placeholder="Полное имя">
+                        <input type="email" required class="form-control footer__input p-4" id="formEmail" placeholder="E-mail">
+                        <input type="text" required class="form-control footer__input p-4" id="formPhone" placeholder="Телефон">
+                        <textarea rows="4" class="form-control footer__input footer__textarea px-4" cols="50" name="comment" form="usrform">Пожалуйста, опишите задачу</textarea>
+                        <a href="#"><small class="form-text footer__policy text-center">Политика обработки персональных данных</small></a>
+                     </div>
+                     <button type="submit" class="btn footer__btn d-block px-5 py-3 text-uppercase mx-auto">Отправить заявку</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <template id="projects__item-template">
+         <li class="projects__item col-lg-4 list-group-item d-flex border-0 p-0 position-relative">
+            <img src="" class="projects__img img-fluid mx-auto" width="550" alt="">
+            <p class="projects__name text-center text-uppercase position-absolute"></p>
+         </li>
+      </template>
+      <div class="popup popup_type_show">
+         <div class="popup__container">
+            <button type="button" class="popup__close popup__close_image">&#9587;</button>
+            <p class="popup__title text-center"></p>
+            <img src="#" alt="" class="popup__image">
+            <p class="popup__caption"></p>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
